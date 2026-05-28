@@ -117,7 +117,7 @@ export function Sidebar() {
             </div>
             {!isCollapsed && (
               <div className="flex-1 overflow-hidden">
-                <p className="text-sm font-medium truncate">Alex Johnson</p>
+                <p className="text-sm font-medium truncate">Navneet</p>
                 <p className="text-xs text-slate-500 truncate">Pro Learner</p>
               </div>
             )}

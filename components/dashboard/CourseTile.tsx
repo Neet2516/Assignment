@@ -11,8 +11,10 @@ interface CourseTileProps {
   delay?: number
 }
 
+// Individual course card component jo progress aur icon display karta hai
 export function CourseTile({ course, delay = 0 }: CourseTileProps) {
-  // Dynamically get the icon from Lucide
+
+  // Lucide icons library se sahi icon select kar raha hai based on database name
   const IconComponent = (LucideIcons as unknown as Record<string, React.ElementType>)[course.icon_name] || LucideIcons.BookOpen
 
   return (
@@ -39,6 +41,7 @@ export function CourseTile({ course, delay = 0 }: CourseTileProps) {
           <span className="text-accent-blue">{course.progress}%</span>
         </div>
         <div className="h-2 w-full bg-slate-800 rounded-full overflow-hidden">
+          {/* Progress bar animation jo dynamically course progress ke hisaab se grow hoti hai */}
           <motion.div
             initial={{ width: 0 }}
             animate={{ width: `${course.progress}%` }}

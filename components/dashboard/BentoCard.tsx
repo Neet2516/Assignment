@@ -9,6 +9,7 @@ interface BentoCardProps {
   delay?: number
 }
 
+// Reusable card container jo Glassmorphism aur hover effects provide karta hai
 export function BentoCard({ children, className = "", delay = 0 }: BentoCardProps) {
   return (
     <motion.article
@@ -27,16 +28,15 @@ export function BentoCard({ children, className = "", delay = 0 }: BentoCardProp
       }}
       className={`relative group rounded-3xl border border-card-border bg-card-bg/40 p-6 overflow-hidden transition-colors hover:border-accent-blue/50 ${className}`}
     >
-      {/* Subtle border glow */}
+      {/* Background glow aur mesh gradients jo hover pe active hote hain */}
       <div className="absolute inset-0 z-0 bg-gradient-to-br from-accent-blue/10 via-transparent to-accent-purple/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
       
-      {/* Mesh Gradient Background */}
       <div className="absolute inset-0 z-0 opacity-[0.05] group-hover:opacity-[0.08] transition-opacity duration-500">
         <div className="absolute top-[-20%] left-[-20%] w-[70%] h-[70%] rounded-full bg-accent-blue blur-[80px]" />
         <div className="absolute bottom-[-20%] right-[-20%] w-[70%] h-[70%] rounded-full bg-accent-purple blur-[80px]" />
       </div>
 
-      {/* Background grain texture */}
+      {/* SVG filter based noise texture for high-quality background finish */}
       <div className="absolute inset-0 z-0 opacity-[0.03] pointer-events-none mix-blend-overlay" 
         style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")` }}
       />

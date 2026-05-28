@@ -2,8 +2,8 @@ import React from "react"
 import { Sidebar } from "@/components/layout/Sidebar"
 
 const settings = [
-  { label: "Name", value: "Alex Johnson" },
-  { label: "Email", value: "alex.johnson@example.com" },
+  { label: "Name", value: "Navneet Kumar" },
+  { label: "Email", value: "[EMAIL_ADDRESS]" },
   { label: "Theme", value: "Dark" },
 ]
 

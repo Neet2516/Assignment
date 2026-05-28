@@ -5,6 +5,7 @@ import { BentoCard } from "./BentoCard"
 import { Flame, Star } from "lucide-react"
 import { motion } from "framer-motion"
 
+// Dashboard ka primary welcome section jo user stats (streak aur XP) showcase karta hai
 export function HeroTile() {
   return (
     <BentoCard className="lg:col-span-2 lg:row-span-1 bg-gradient-to-br from-card-bg/80 to-accent-blue/5">
@@ -16,12 +17,13 @@ export function HeroTile() {
             transition={{ delay: 0.2 }}
             className="text-3xl lg:text-4xl font-bold tracking-tight"
           >
-            Welcome back, <span className="text-accent-blue">Alex!</span>
+            Welcome back, <span className="text-accent-blue">Navneet!</span>
           </motion.h1>
           <p className="text-slate-400 mt-2">You&apos;ve completed 85% of your weekly goals. Keep it up!</p>
         </div>
         
         <div className="flex flex-wrap gap-4">
+          {/* Daily streak display section */}
           <div className="flex items-center gap-3 bg-card-bg/50 border border-card-border rounded-2xl px-4 py-3">
             <div className="h-10 w-10 rounded-full bg-orange-500/20 flex items-center justify-center text-orange-500">
               <Flame size={22} fill="currentColor" />
@@ -32,6 +34,7 @@ export function HeroTile() {
             </div>
           </div>
           
+          {/* XP points display section */}
           <div className="flex items-center gap-3 bg-card-bg/50 border border-card-border rounded-2xl px-4 py-3">
             <div className="h-10 w-10 rounded-full bg-yellow-500/20 flex items-center justify-center text-yellow-500">
               <Star size={22} fill="currentColor" />
