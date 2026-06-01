@@ -1,6 +1,6 @@
 # EDU-LITE Dashboard
 
-A modern, high-performance learning dashboard built with **Next.js 15**, **TypeScript**, and **Tailwind CSS v4**.
+A modern, high-performance learning dashboard built with **Next.js 15**, **TypeScript**, and **Tailwind CSS **.
 
 ## 🚀 Features
 
