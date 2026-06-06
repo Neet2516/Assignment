@@ -4,7 +4,7 @@ A modern, high-performance learning dashboard built with **Next.js 15**, **TypeS
 
 ## 🚀 Features
 
-- **Dynamic Dashboard**: Personalized welcome message for **Navneet**.
+- **Dynamic Dashboard**: Personalized welcome message for **Navneet** provided for the assignment .
 - **Course Tracking**: Visualize your learning progress with animated progress bars.
 - **Activity Visualization**: interactive bar charts for daily study hours.
 - **Glassmorphism UI**: Beautiful, modern design with mesh gradients and noise textures.
